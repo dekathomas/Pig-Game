@@ -1,0 +1,122 @@
+:root{
+	--main-color: #0b1731;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	background: url(https://images.unsplash.com/photo-1529801231037-d67f3dce5d89?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80);
+	background-size: cover;
+}
+
+.active{
+	background: #f0f0f0;
+}
+
+.active .player-name {
+	font-weight: bold;
+}
+
+.active .player-name::after {
+	content: "";
+	border-bottom: 5px solid #000;
+	position: absolute;
+	border-radius: 50%;
+	width: 5px;
+	top: 100px;
+}
+
+#wrapper{
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#box{
+	height: 95vh;
+	width: 70%;
+	background-color: #FFF;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+	box-sizing: border-box;
+	position: relative;
+}
+
+.section-1, .section-2{
+	height: 100%;
+	text-align: center;
+	padding: 80px 0;
+	box-sizing: border-box;
+	width: 50%;
+}
+.section-1{
+	float: left;
+}
+.section-1 h1, .section-2 h1{
+	font-weight: lighter;
+	margin-bottom: 50px;
+}
+.section-1 .score-1, .section-2 .score-2{
+	font-size: 80px;
+	font-weight: lighter;
+	margin-bottom: 100px;
+}
+.section-1 .current-1, .section-2 .current-2{
+	background: #353535;
+	color: #fff;
+	width: 15%;
+	padding: 3px 10px;
+	margin: 0 auto;
+}
+.section-2{
+	float: right;
+}
+
+.new, .roll, .hold, .attention{
+	position: absolute;
+	font-weight: lighter;
+	font-size: 20px;
+	text-transform: uppercase;
+	transition: 0.3s;
+	cursor: pointer;
+	left: 44%;
+}
+.new{
+	top: 18%;
+}
+.roll{
+	bottom: 170px;
+}
+.hold{
+	bottom: 130px;
+	left: 47%;
+}
+.new:hover, .roll:hover{
+	font-weight: bold;
+	left: 44.5%;
+	text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+.hold:hover{
+	font-weight: bold;
+	left: 47.5%;
+	text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.dice{
+	position: absolute;
+	transform: scale(0.5);
+	left: 40%;
+	top: 25%;
+}
+.show{
+	display: block !important;
+}
+.attention{
+	color: #ff0000;
+	display: none;
+	bottom: 100px;
+	left: 45%;
+	font-size: 10px !important;
+}

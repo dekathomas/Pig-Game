@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pig Game</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="icon" href="icon.png">
+</head>
+<body>
+	<div id="wrapper">
+		<div id="box">
+			<div class="section-1 active">
+				<h1 class="player-1 player-name">PLAYER 1</h1>
+				<div class="score-1">0</div>
+				<div class="current-1">
+					<p>Current</p>
+					<p class="curr-1">0</p>
+				</div>
+			</div>
+			<div class="section-2">
+				<h1 class="player-2 player-name">PLAYER 2</h1>
+				<div class="score-2">0</div>
+				<div class="current-2">
+					<p>Current</p>
+					<p class="curr-2">0</p>
+				</div>
+			</div>
+			<div class="new" onclick="init()">New Game</div>
+			<div class="roll">Roll Dice</div>
+			<div class="hold">Hold</div>
+			<div class="dice">
+				<img src="dice-1.png" alt="dice" class="dice-img">
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
